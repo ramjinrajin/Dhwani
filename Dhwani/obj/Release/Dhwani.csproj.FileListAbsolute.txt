@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\bin\Release\Dhwani.exe.config
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\bin\Release\Dhwani.exe
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\bin\Release\Dhwani.pdb
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani._1.Presentation.BaseListener.CommandListener.resources
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani._1.Presentation.CommandModule.Command.resources
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.Login.resources
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.Properties.Resources.resources
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.exe
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.pdb
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani._1.Presentation.BaseListener.CommandListenerBeta.resources
