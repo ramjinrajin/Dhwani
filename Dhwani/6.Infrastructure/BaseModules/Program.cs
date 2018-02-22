@@ -1,4 +1,5 @@
 ﻿using Dhwani._1.Presentation.BaseListener;
+using Dhwani._1.Presentation.CommandModule;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Dhwani
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CommandListener());
+            Application.Run(new Command());
            // Application.Run(new Login());
         }
     }

@@ -32,3 +32,16 @@ C:\Users\LENOVO-PC\Desktop\proj dhwani\Dhwani\Dhwani\obj\Debug\Dhwani._1.Present
 C:\Users\LENOVO-PC\Desktop\proj dhwani\Dhwani\Dhwani\obj\Debug\Dhwani.Login.resources
 C:\Users\LENOVO-PC\Desktop\proj dhwani\Dhwani\Dhwani\obj\Debug\Dhwani.Properties.Resources.resources
 C:\Users\LENOVO-PC\Desktop\proj dhwani\Dhwani\Dhwani\obj\Debug\Dhwani.csproj.GenerateResource.Cache
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\bin\Debug\Dhwani.exe.config
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.exe
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.pdb
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\bin\Debug\Dhwani.exe
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\bin\Debug\Dhwani.pdb
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.csprojResolveAssemblyReference.cache
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.BaseListener.CommandListener.resources
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.BaseListener.CommandListenerBeta.resources
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.CommandModule.Command.resources
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.CommandModule.CommandManage.resources
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.Login.resources
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.Properties.Resources.resources
+F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.csproj.GenerateResource.Cache
