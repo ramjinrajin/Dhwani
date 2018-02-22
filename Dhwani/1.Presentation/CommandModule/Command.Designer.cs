@@ -103,7 +103,7 @@
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Location = new System.Drawing.Point(197, 158);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(1);
@@ -133,7 +133,7 @@
             // lbltrnn
             // 
             this.lbltrnn.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.lbltrnn.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltrnn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltrnn.ForeColor = System.Drawing.Color.White;
             this.lbltrnn.Location = new System.Drawing.Point(3, 0);
             this.lbltrnn.Name = "lbltrnn";
