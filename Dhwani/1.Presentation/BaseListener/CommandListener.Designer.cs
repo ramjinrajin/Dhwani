@@ -42,15 +42,15 @@
             this.AnimatePanel.Image = global::Dhwani.Properties.Resources.preview;
             this.AnimatePanel.Location = new System.Drawing.Point(0, 0);
             this.AnimatePanel.Name = "AnimatePanel";
-            this.AnimatePanel.Size = new System.Drawing.Size(718, 442);
-            this.AnimatePanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AnimatePanel.Size = new System.Drawing.Size(535, 401);
+            this.AnimatePanel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AnimatePanel.TabIndex = 5;
             this.AnimatePanel.TabStop = false;
             // 
             // webBrowser1
             // 
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(1);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(8, 8);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(1125, 444);
@@ -59,7 +59,7 @@
             // webBrowser2
             // 
             this.webBrowser2.Location = new System.Drawing.Point(698, 424);
-            this.webBrowser2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.webBrowser2.Margin = new System.Windows.Forms.Padding(1);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(8, 8);
             this.webBrowser2.Name = "webBrowser2";
             this.webBrowser2.Size = new System.Drawing.Size(10, 8);
@@ -70,13 +70,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(718, 442);
+            this.ClientSize = new System.Drawing.Size(535, 401);
             this.Controls.Add(this.webBrowser2);
             this.Controls.Add(this.AnimatePanel);
             this.Controls.Add(this.webBrowser1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "CommandListener";
             this.Text = "CommandListener";
             this.Load += new System.EventHandler(this.CommandListener_Load);

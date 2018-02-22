@@ -12,6 +12,9 @@ using System.Diagnostics;
 using Dhwani._6.Infrastructure.MainModule;
 using System.Speech.Recognition;
 using System.Threading;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Web.Script.Serialization;
 
 namespace Dhwani._1.Presentation.BaseListener
 {
@@ -66,8 +69,49 @@ namespace Dhwani._1.Presentation.BaseListener
                 manualResetEvent.Set();
                 return ;
             }
-          //  MessageBox.Show("You said: " + e.Result.Text);
-            ConvertManglishtoMalayalam(e.Result.Text);
+         
+            if(e.Result.Text!="")
+            {
+                string MalayalamWord = GoogleIntegratedApi(e.Result.Text);
+                if (MalayalamWord != "NIL")
+                {
+                    ConvertManglishtoMalayalam(MalayalamWord);
+                }
+            }
+
+           
+        }
+
+        private static string GoogleIntegratedApi(string Manglish)
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://www.google.com");
+
+
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+            HttpResponseMessage response = client.GetAsync(string.Format("inputtools/request?text={0}&ime=transliteration_en_ml&num=1", Manglish)).Result;
+            var dataObjects = response.Content.ReadAsStringAsync().Result;
+            var json = new JavaScriptSerializer().Serialize(dataObjects);
+
+
+            int i = 0;
+
+            foreach (var item in json.ToString().Split(','))
+            {
+                if (i == 2)
+                {
+
+                    string UnformattedMalayalamWord = item.Substring(3);
+                    string FormattedWord = UnformattedMalayalamWord.Substring(0, UnformattedMalayalamWord.Length - 3);
+                  return FormattedWord;
+                }
+                i++;
+            }
+
+            return "NIL";
         }
 
         private static void ConvertManglishtoMalayalam(string Manglish)

@@ -45,3 +45,16 @@ F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.C
 F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.Login.resources
 F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.Properties.Resources.resources
 F:\Projects\Inzenjer\IHRD-Amala\Dhwani\Dhwani\obj\Debug\Dhwani.csproj.GenerateResource.Cache
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\bin\Debug\Dhwani.exe.config
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani.exe
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani.pdb
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\bin\Debug\Dhwani.exe
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\bin\Debug\Dhwani.pdb
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani.csprojResolveAssemblyReference.cache
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.BaseListener.CommandListener.resources
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.BaseListener.CommandListenerBeta.resources
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.CommandModule.Command.resources
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.CommandModule.CommandManage.resources
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani.Login.resources
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani.Properties.Resources.resources
+C:\Users\ramjin.mahadevan\Desktop\New folder\Dhwani\Dhwani\obj\Debug\Dhwani.csproj.GenerateResource.Cache
