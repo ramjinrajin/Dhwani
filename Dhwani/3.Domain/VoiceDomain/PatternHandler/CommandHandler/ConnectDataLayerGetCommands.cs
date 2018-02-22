@@ -25,7 +25,7 @@ namespace Dhwani._3.Domain.VoiceDomain.PatternHandler.CommandHandler
 
          internal bool InsertCommandData(CommandService cmdService)
          {
-            throw new NotImplementedException();
+             return true;
          }
 
 

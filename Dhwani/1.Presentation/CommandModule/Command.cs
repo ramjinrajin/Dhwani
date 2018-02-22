@@ -19,6 +19,7 @@ namespace Dhwani._1.Presentation.CommandModule
         public Command()
         {
             InitializeComponent();
+            btnInsert.Visible = false;
         }
 
         private void btnInsert_Click(object sender, EventArgs e)
@@ -41,6 +42,35 @@ namespace Dhwani._1.Presentation.CommandModule
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(txtManglish.Text!="")
+                {
+                    GoogleIntegratedApi();
+                    if (txtMalayalam.Text != "" && txtManglish.Text != "")
+                    {
+                        btnSearch.Visible = false;
+                        btnInsert.Visible = true;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No word to search","Null exception",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                }
+               
+
+                
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+          
+        }
+
+        private void GoogleIntegratedApi()
         {
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("http://www.google.com");
