@@ -17,6 +17,8 @@ using System.Net.Http.Headers;
 using System.Web.Script.Serialization;
 using System.Data.SqlClient;
 using Dhwani._1.Presentation.CommandModule;
+using Dhwani._3.Domain.VoiceDomain.PatternHandler.CommandHandler;
+using Dhwani._2.Application.VoiceService.CommandService;
 
 namespace Dhwani._1.Presentation.BaseListener
 {
@@ -35,23 +37,23 @@ namespace Dhwani._1.Presentation.BaseListener
             this.webBrowser1.Visible = false;
             SpeechSynthesizer synth = new SpeechSynthesizer();
             synth.SetOutputToDefaultAudioDevice();
-           // synth.SpeakAsync("Hello there !!! This is thwaany . I'am Listening");
+            // synth.SpeakAsync("Hello there !!! This is thwaany . I'am Listening");
         }
 
 
-      //   public static InputLanguage GetInputLanguageByName(string inputName)
-      //  {
+        //   public static InputLanguage GetInputLanguageByName(string inputName)
+        //  {
         //    foreach (InputLanguage lang in InputLanguage.InstalledInputLanguages)
-          //  {
-            //    if (lang.Culture.EnglishName.ToLower().StartsWith(inputName))
-              //      return lang;
-           // }
-           // return null;
-       // }
+        //  {
+        //    if (lang.Culture.EnglishName.ToLower().StartsWith(inputName))
+        //      return lang;
+        // }
+        // return null;
+        // }
 
 
 
- 
+
 
         static SpeechRecognitionEngine _recognizer = null;
         static ManualResetEvent manualResetEvent = null;
@@ -67,6 +69,10 @@ namespace Dhwani._1.Presentation.BaseListener
 
         static void speechRecognitionWithDictationGrammar_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
+
+            ConnectDataLayerGetCommands Data = new ConnectDataLayerGetCommands();
+            List<CommandService> ListCommand = Data.GetAllCommands();
+
             if (e.Result.Text == "Close")
             {
                 manualResetEvent.Set();
@@ -78,7 +84,11 @@ namespace Dhwani._1.Presentation.BaseListener
                 string MalayalamWord = GoogleIntegratedApi(e.Result.Text);
                 if (MalayalamWord != "NIL")
                 {
-                    ConvertManglishtoMalayalam(MalayalamWord);
+                    if (ListCommand.Any(x=>x.Manglish.Trim()==e.Result.Text.Trim()))
+                    {
+                        ConvertManglishtoMalayalam(MalayalamWord);
+                    }
+                    
                 }
             }
 
@@ -109,7 +119,7 @@ namespace Dhwani._1.Presentation.BaseListener
 
                     string UnformattedMalayalamWord = item.Substring(3);
                     string FormattedWord = UnformattedMalayalamWord.Substring(0, UnformattedMalayalamWord.Length - 3);
-                  return FormattedWord;
+                    return FormattedWord;
                 }
                 i++;
             }
@@ -153,20 +163,20 @@ namespace Dhwani._1.Presentation.BaseListener
 
         private void button1_Click(object sender, EventArgs e)
         {
-          //  var Resule = GetInputLanguageByName("   ");
- 
+            //  var Resule = GetInputLanguageByName("   ");
+
             //string Data="%E0%B4%87%E0%B4%A8%E0%B4%BF%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%B1%E0%B4%AF%E0%B5%81";
-          //string Name="ഇനിപ്പറയുന്നതില്‍";
+            //string Name="ഇനിപ്പറയുന്നതില്‍";
             //this.webBrowser1.Visible = true;
             //this.webBrowser1.Navigate(string.Format("https://www.google.co.in/search?q=%E0%B4%87%E0%B4%A8%E0%B4%BF%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%B1%E0%B4%AF%E0%B5%81%E0%B4%A8%E0%B5%8D%E0%B4%A8%E0%B4%A4%E0%B4%BFs", Name));
-           // Login objlogin = new Login();
+            // Login objlogin = new Login();
             //objlogin.Show();
 
 
 
 
             ConvertManglishtoMalayalam();
-     
+
         }
 
         private void ConvertManglishtoMalayalam()
@@ -192,8 +202,8 @@ namespace Dhwani._1.Presentation.BaseListener
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-          
-             
+
+
         }
 
         private void AnimatePanel_DoubleClick(object sender, EventArgs e)
@@ -201,7 +211,7 @@ namespace Dhwani._1.Presentation.BaseListener
 
             Command cmd = new Command();
             cmd.ShowDialog();
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)

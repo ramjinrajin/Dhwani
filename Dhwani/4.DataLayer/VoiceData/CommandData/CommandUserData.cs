@@ -42,10 +42,11 @@ namespace Dhwani._4.DataLayer.VoiceData.CommandData
 
 
 
-        internal List<CommandService> GetAllCommands()
-        {
-            //Data base code comes here
-            throw new NotImplementedException();
-        }
+
+
+       internal List<CommandService> GetAllCommands()
+       {
+           throw new NotImplementedException();
+       }
     }
 }

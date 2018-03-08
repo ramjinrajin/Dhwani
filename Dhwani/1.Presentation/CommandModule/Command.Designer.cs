@@ -120,11 +120,11 @@
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtMalayalam);
-            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.txtManglish);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnInsert);
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Location = new System.Drawing.Point(214, 130);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(464, 248);
