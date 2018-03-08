@@ -71,7 +71,7 @@
             // 
             this.txtManglish.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtManglish.Location = new System.Drawing.Point(197, 57);
-            this.txtManglish.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtManglish.Margin = new System.Windows.Forms.Padding(1);
             this.txtManglish.Name = "txtManglish";
             this.txtManglish.Size = new System.Drawing.Size(178, 29);
             this.txtManglish.TabIndex = 2;
@@ -81,7 +81,7 @@
             // 
             this.txtMalayalam.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMalayalam.Location = new System.Drawing.Point(197, 106);
-            this.txtMalayalam.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.txtMalayalam.Margin = new System.Windows.Forms.Padding(1);
             this.txtMalayalam.Name = "txtMalayalam";
             this.txtMalayalam.Size = new System.Drawing.Size(178, 29);
             this.txtMalayalam.TabIndex = 3;
@@ -92,7 +92,7 @@
             this.btnInsert.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.Color.White;
             this.btnInsert.Location = new System.Drawing.Point(197, 158);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(1);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(178, 31);
             this.btnInsert.TabIndex = 4;
@@ -144,6 +144,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.lbltrnn);
@@ -171,9 +172,10 @@
             this.ClientSize = new System.Drawing.Size(902, 616);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.MinimizeBox = false;
             this.Name = "Command";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sytem Trainer";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

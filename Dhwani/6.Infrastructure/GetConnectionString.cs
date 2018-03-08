@@ -10,7 +10,9 @@ namespace Dhwani._6.Infrastructure
     {
       public static string connect()
       {
-          return "Data Source=DESKTOP-DPB87O9\\SQLEXPRESS;Initial Catalog=DHWANI;Persist Security Info=True;User ID=sa;Password=dhwani";
+          string DbLocation = Environment.CurrentDirectory.ToString();
+          string ConnectionString = string.Format(@"Data Source=(LocalDB)\v11.0;AttachDbFilename={0}\Dhwani_DB.mdf;Integrated Security=True", DbLocation);
+          return ConnectionString;
       }
     }
 }

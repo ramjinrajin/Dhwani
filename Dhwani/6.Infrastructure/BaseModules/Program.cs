@@ -19,7 +19,7 @@ namespace Dhwani
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new CommandListener());
-           // Application.Run(new Login());
+           
         }
     }
 }

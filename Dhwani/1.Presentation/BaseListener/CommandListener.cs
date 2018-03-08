@@ -16,6 +16,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web.Script.Serialization;
 using System.Data.SqlClient;
+using Dhwani._1.Presentation.CommandModule;
 
 namespace Dhwani._1.Presentation.BaseListener
 {
@@ -24,6 +25,7 @@ namespace Dhwani._1.Presentation.BaseListener
         public CommandListener()
         {
             InitializeComponent();
+            SearchKey.Visible = false;
         }
 
         private void CommandListener_Load(object sender, EventArgs e)
@@ -190,12 +192,21 @@ namespace Dhwani._1.Presentation.BaseListener
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string DbLocation = Environment.CurrentDirectory.ToString();
-            string ConnectionString = string.Format(@"Data Source=(LocalDB)\v11.0;AttachDbFilename={0}\Dhwani_DB.mdf;Integrated Security=True", DbLocation);
-            using(SqlConnection  con = new SqlConnection(ConnectionString))
-            {
-                con.Open();
-            }
+          
+             
+        }
+
+        private void AnimatePanel_DoubleClick(object sender, EventArgs e)
+        {
+
+            Command cmd = new Command();
+            cmd.ShowDialog();
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
