@@ -15,6 +15,7 @@ using System.Threading;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web.Script.Serialization;
+using System.Data.SqlClient;
 
 namespace Dhwani._1.Presentation.BaseListener
 {
@@ -184,6 +185,16 @@ namespace Dhwani._1.Presentation.BaseListener
                 {
                     Process.Start(sInfo);
                 }
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string DbLocation = Environment.CurrentDirectory.ToString();
+            string ConnectionString = string.Format(@"Data Source=(LocalDB)\v11.0;AttachDbFilename={0}\Dhwani_DB.mdf;Integrated Security=True", DbLocation);
+            using(SqlConnection  con = new SqlConnection(ConnectionString))
+            {
+                con.Open();
             }
         }
     }
