@@ -22,6 +22,8 @@ using Dhwani._2.Application.VoiceService.CommandService;
 
 namespace Dhwani._1.Presentation.BaseListener
 {
+
+   
     public partial class CommandListener : Form
     {
         public CommandListener()
@@ -81,50 +83,102 @@ namespace Dhwani._1.Presentation.BaseListener
          
             if(e.Result.Text!="")
             {
-                string MalayalamWord = GoogleIntegratedApi(e.Result.Text);
-                if (MalayalamWord != "NIL")
+                List<string> Sentence = new List<string>();
+                string wholSentence = e.Result.Text;
+                //MessageBox.Show(wholSentence.Trim().Split(' ').Length.ToString());
+               // MessageBox.Show(wholSentence);
+                if (wholSentence.Trim().Split(' ').Length > 1)
                 {
-                    if (ListCommand.Any(x=>x.Manglish.Trim()==e.Result.Text.Trim()))
-                    {
-                        ConvertManglishtoMalayalam(MalayalamWord);
-                    }
                     
+                    //wholSentence = wholSentence.Substring(0, wholSentence.IndexOf(" "));
+                    MessageBox.Show("Recognized word :"+wholSentence,"Alert",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    MaketheLableVisible(wholSentence);
+                    Sentence = wholSentence.Trim().Split(' ').ToList();
+
+                    foreach (var word in Sentence)
+                    {
+                        string MalayalamWord = GoogleIntegratedApi(word);
+                        if (MalayalamWord != "NIL")
+                        {
+                            if (ListCommand.Any(x => x.Manglish.Trim() == word.Trim()))
+                            {
+                                ConvertManglishtoMalayalam(MalayalamWord);
+                            }
+
+                        }
+
+                    }
                 }
+                else
+                {
+                    string MalayalamWord = GoogleIntegratedApi(wholSentence);
+                    if (MalayalamWord != "NIL")
+                    {
+                        if (ListCommand.Any(x => x.Manglish.Trim() == wholSentence.Trim()))
+                        {
+                            ConvertManglishtoMalayalam(MalayalamWord);
+                        }
+
+                    }
+                }
+
+               
+                
+
+               
             }
 
            
         }
 
+        
+        private static void MaketheLableVisible(string wholSentence)
+        {
+             
+        }
+
+        
+
         private static string GoogleIntegratedApi(string Manglish)
         {
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://www.google.com");
-
-
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-
-            HttpResponseMessage response = client.GetAsync(string.Format("inputtools/request?text={0}&ime=transliteration_en_ml&num=1", Manglish)).Result;
-            var dataObjects = response.Content.ReadAsStringAsync().Result;
-            var json = new JavaScriptSerializer().Serialize(dataObjects);
-
-
-            int i = 0;
-
-            foreach (var item in json.ToString().Split(','))
+            try
             {
-                if (i == 2)
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri("http://www.google.com");
+
+
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+
+                HttpResponseMessage response = client.GetAsync(string.Format("inputtools/request?text={0}&ime=transliteration_en_ml&num=1", Manglish)).Result;
+                var dataObjects = response.Content.ReadAsStringAsync().Result;
+                var json = new JavaScriptSerializer().Serialize(dataObjects);
+
+
+                int i = 0;
+
+                foreach (var item in json.ToString().Split(','))
                 {
+                    if (i == 2)
+                    {
 
-                    string UnformattedMalayalamWord = item.Substring(3);
-                    string FormattedWord = UnformattedMalayalamWord.Substring(0, UnformattedMalayalamWord.Length - 3);
-                    return FormattedWord;
+                        string UnformattedMalayalamWord = item.Substring(3);
+                        string FormattedWord = UnformattedMalayalamWord.Substring(0, UnformattedMalayalamWord.Length - 3);
+                        return FormattedWord;
+                    }
+                    i++;
                 }
-                i++;
-            }
 
-            return "NIL";
+                return "NIL";
+
+            }
+            catch 
+            {
+
+                return "NIL";
+            }
+            
         }
 
         private static void ConvertManglishtoMalayalam(string Manglish)

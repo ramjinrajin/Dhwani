@@ -10,3 +10,6 @@ C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.exe
 C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.pdb
 C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\proj dhwani\Dhwani\Dhwani\obj\Release\Dhwani._1.Presentation.BaseListener.CommandListenerBeta.resources
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\bin\Release\Dhwani.exe.config
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Release\Dhwani.exe
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Release\Dhwani.pdb

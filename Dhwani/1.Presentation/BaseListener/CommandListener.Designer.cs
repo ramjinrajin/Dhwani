@@ -42,7 +42,7 @@
             // webBrowser1
             // 
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(1);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(8, 8);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(1125, 444);
@@ -51,7 +51,7 @@
             // webBrowser2
             // 
             this.webBrowser2.Location = new System.Drawing.Point(698, 424);
-            this.webBrowser2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.webBrowser2.Margin = new System.Windows.Forms.Padding(1);
             this.webBrowser2.MinimumSize = new System.Drawing.Size(8, 8);
             this.webBrowser2.Name = "webBrowser2";
             this.webBrowser2.Size = new System.Drawing.Size(10, 8);
@@ -73,11 +73,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(212, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 33);
+            this.label1.Size = new System.Drawing.Size(118, 33);
             this.label1.TabIndex = 9;
             this.label1.Text = "Dhwani";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -97,13 +97,13 @@
             // 
             this.SearchKey.AutoSize = true;
             this.SearchKey.BackColor = System.Drawing.SystemColors.Highlight;
-            this.SearchKey.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchKey.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchKey.ForeColor = System.Drawing.Color.White;
-            this.SearchKey.Location = new System.Drawing.Point(208, 113);
+            this.SearchKey.Location = new System.Drawing.Point(215, 117);
             this.SearchKey.Name = "SearchKey";
-            this.SearchKey.Size = new System.Drawing.Size(133, 31);
+            this.SearchKey.Size = new System.Drawing.Size(93, 13);
             this.SearchKey.TabIndex = 11;
-            this.SearchKey.Text = ".................";
+            this.SearchKey.Text = "thiruvanthapura";
             // 
             // CommandListener
             // 
@@ -121,7 +121,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "CommandListener";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CommandListener";

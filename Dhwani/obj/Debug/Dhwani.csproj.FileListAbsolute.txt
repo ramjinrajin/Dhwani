@@ -88,3 +88,33 @@ C:\Users\RamjinM\Desktop\1032018\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.
 C:\Users\RamjinM\Desktop\1032018\Dhwani\Dhwani\obj\Debug\Dhwani.Login.resources
 C:\Users\RamjinM\Desktop\1032018\Dhwani\Dhwani\obj\Debug\Dhwani.Properties.Resources.resources
 C:\Users\RamjinM\Desktop\1032018\Dhwani\Dhwani\obj\Debug\Dhwani.csproj.GenerateResource.Cache
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\bin\Debug\Dhwani.exe.config
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.exe
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.pdb
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\bin\Debug\bin\Debug\Dhwani_DB.mdf
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\bin\Debug\bin\Debug\Dhwani_DB_log.ldf
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\bin\Debug\Dhwani.exe
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\bin\Debug\Dhwani.pdb
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.csprojResolveAssemblyReference.cache
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.BaseListener.CommandListener.resources
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.BaseListener.CommandListenerBeta.resources
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.CommandModule.Command.resources
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.CommandModule.CommandManage.resources
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.Login.resources
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.Properties.Resources.resources
+C:\Users\User\Downloads\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.csproj.GenerateResource.Cache
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\bin\Debug\Dhwani.exe.config
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.exe
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.pdb
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\bin\Debug\bin\Debug\Dhwani_DB.mdf
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\bin\Debug\bin\Debug\Dhwani_DB_log.ldf
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\bin\Debug\Dhwani.exe
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\bin\Debug\Dhwani.pdb
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.BaseListener.CommandListener.resources
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.BaseListener.CommandListenerBeta.resources
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.CommandModule.Command.resources
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani._1.Presentation.CommandModule.CommandManage.resources
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.Login.resources
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.Properties.Resources.resources
+C:\Users\LENOVO-PC\Desktop\Release Version 2.0\Dhwani\Dhwani\obj\Debug\Dhwani.csproj.GenerateResource.Cache
